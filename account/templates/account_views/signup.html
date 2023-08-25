@@ -4,10 +4,9 @@
 
 {% block body %}
     <h1>Inscription utilisateur</h1>
-    <form action="POST">
-        <label for="login">Login</label>
-        <input type="text" id="login">
-        <label for="PWD">Password</label>
-        <input type="text" id="PWD">
+    <form method="POST">
+       {% csrf_token %}
+       {{form}}
+       <input type="submit"/>
     </form>
 {% endblock %}
