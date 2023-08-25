@@ -15,7 +15,7 @@ class Author(models.Model):
     firstname = models.CharField(max_length=30)
     lastname = models.CharField(max_length=30)
     email = models.EmailField(max_length=50)
-    gender = models.CharField(max_length=1, choices= GENDER_CHOICES )
+    gender = models.CharField(max_length=1, choices= GENDER_CHOICES, default=MALE)
 
     def __str__(self):
         return self.lastname + " " + self.firstname
