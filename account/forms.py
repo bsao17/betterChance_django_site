@@ -1,12 +1,5 @@
 from django import forms
+from django.contrib.auth.models import User
 
-class Signup(forms.Form):
-    firstname = forms.CharField(label="Prénom")
-    lastname = forms.CharField(label="Nom")
-    login = forms.CharField(label="Nom d'utilisateur")
-    password = forms.PasswordInput()
+from .models import Signup
 
-class Signin(forms.Form):
-    login = forms.CharField(label="Nom d'utilisateur")
-    password = forms.PasswordInput()
-    repeat_password = forms.PasswordInput()

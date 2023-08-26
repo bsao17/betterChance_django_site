@@ -1,13 +1,13 @@
-from django.shortcuts import render, HttpResponse, redirect
+from django.shortcuts import render, redirect
+from django.contrib.auth.models import User
+from django.contrib.auth import authenticate, login, logout
 from .forms import *
+
 
 # Create your views here.
 def signin(request):
     return render(request, "account_views/signin.html")
 
+
 def signup(request):
-    form = Signup(request.POST)
-    if request.method == 'POST':
-        if form.is_valid():
-            return redirect("orders_views/form.html")
-    return render(request, "account_views/signup.html", context={"form": form})
+    return render(request, "account_views/signup.html")
