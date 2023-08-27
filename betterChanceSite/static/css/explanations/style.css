@@ -1,0 +1,18 @@
+#explanations {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: blue;
+}
+
+#explain_list {
+    color: black;
+}
+
+#link {
+    color: black;
+}
+
+#link:visited {
+    color: blue;
+}
