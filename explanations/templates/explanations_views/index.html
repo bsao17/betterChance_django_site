@@ -3,5 +3,10 @@
 {% block title %}Explication algorithme{% endblock %}
 {% block body %}
     <h1>Explications de l'Algorithmes Better Chance</h1>
+    {% for detail in details %}
+    <ul id="explanations">
+        <li class="explain_list"><a href="" id="link">{{detail}}</a></li>
+    </ul>
+    {% endfor%}
 
 {% endblock %}

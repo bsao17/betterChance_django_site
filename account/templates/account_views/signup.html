@@ -3,6 +3,12 @@
 {% block title %}Inscription utilisateur{% endblock %}
 
 {% block body %}
+<div id="form">
     <h1>Inscription utilisateur</h1>
-
+    <form method="POST" id="signup_form">
+            {% csrf_token %}
+            {{form.as_ul}}
+        <button type="submit" id="button_form" >S'inscrire</button>
+    </form>
+</div>
 {% endblock %}

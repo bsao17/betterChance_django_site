@@ -10,4 +10,8 @@ def signin(request):
 
 
 def signup(request):
-    return render(request, "account_views/signup.html")
+    form = Signup_form(request.POST)
+    if form.is_valid():
+        form.save()
+        return redirect("orders")
+    return render(request, "account_views/signup.html", {"form": form})
