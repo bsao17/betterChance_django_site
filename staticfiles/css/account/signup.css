@@ -1,0 +1,32 @@
+
+#form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.helptext {
+    display: none;
+}
+#signup_form {
+    font-size: 0.8rem;
+    text-shadow: 0 0 0;
+}
+
+li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: space-evenly;
+}
+
+#button_form {
+    border-radius: 5px;
+    margin: 20px;
+    padding: 5px;
+    background-color: #121264;
+    color: white;
+}
