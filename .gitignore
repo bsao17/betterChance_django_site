@@ -1,4 +1,4 @@
 .idea
 .node_modules
 db.sqlite3
-.env
+betterChanceSite/.env
