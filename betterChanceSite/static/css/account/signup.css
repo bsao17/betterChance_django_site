@@ -11,9 +11,8 @@
     display: none;
 }
 #signup_form {
-
     font-size: 0.8rem;
-
+    text-shadow: 0 0 0;
 }
 
 li {
