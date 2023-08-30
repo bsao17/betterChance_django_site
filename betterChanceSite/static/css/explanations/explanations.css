@@ -3,14 +3,17 @@
     display: flex;
     justify-content: center;
     font-size: 1.2rem;
-    color: black;
+
     margin: auto;
 }
 
-#link {
+.explain_list {
     color: black;
+    font-size: 1.7rem;
+    padding: 15px;
 }
 
-#link:visited {
+.explain_list:visited {
     color: black;
+    font-size: 1.7rem;
 }

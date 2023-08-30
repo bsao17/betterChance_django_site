@@ -6,8 +6,10 @@ from .forms import *
 
 # Create your views here.
 def signin(request):
-    form_signin = Signin_form(request.POST)
-    return render(request, "account_views/signin.html", context={"signin_form": form_signin})
+    form = Signin_form(request.POST)
+    if form.is_valid():
+        return redirect("orders")
+    return render(request, "account_views/signin.html", context={"signin_form": form})
 
 
 def signup(request):

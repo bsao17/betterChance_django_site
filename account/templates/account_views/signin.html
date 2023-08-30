@@ -7,8 +7,10 @@
 
 {% block body %}
     <h1>Connexion utilisateur</h1>
-    {% csrf_token %}
-    {{signin_form.as_ul}}
-    <button type="submit">Connexion</button>
+     <form method="POST" id="signup_form">
+            {% csrf_token %}
+            {{signin_form.as_ul}}
+        <button type="submit" id="button_form" >Connexion</button>
+     </form>
 
 {% endblock %}
