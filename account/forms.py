@@ -12,9 +12,7 @@ class Signup_form(UserCreationForm):
             "first_name",
             "age",
             "email",
-            "username",
-            "password",
-            "password2"
+            "username"
         ]
         widgets = {
             "password": forms.PasswordInput(),
@@ -25,13 +23,11 @@ class Signup_form(UserCreationForm):
 class Signin_form(AuthenticationForm):
     class Meta:
         model: CustomUser
-        fields = ["username", "password", "password2"]
+        fields = ["username", "password"]
         widgets = {
             "password": forms.PasswordInput(),
-            "password2": forms.PasswordInput()
         }
         labels = {
             "username": "Nom d'Utilisateur",
             "password": "Mot de passe",
-            "password2": "Répeter mot de passe"
         }

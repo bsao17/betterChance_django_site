@@ -17,5 +17,8 @@ class Author(models.Model):
     email = models.EmailField(max_length=50)
     gender = models.CharField(max_length=1, choices=GENDER_CHOICES, default=MALE)
 
+    class Meta:
+        verbose_name = "Auteur"
+
     def __str__(self):
         return self.lastname + " " + self.firstname

@@ -46,6 +46,9 @@ INSTALLED_APPS = [
     'explanations',
     'orders',
     'account',
+    'tailwind',
+    'theme',
+    'django_browser_reload'
 ]
 
 MIDDLEWARE = [
@@ -134,3 +137,12 @@ STATICFILES_DIRS = [
     BASE_DIR / "betterChanceSite" / "static/"
 ]
 AUTH_USER_MODEL = "account.CustomUser"
+# settings.py
+TAILWIND_APP_NAME = 'theme'
+# settings.py
+INTERNAL_IPS = [
+    "127.0.0.1",
+]
+NPM_BIN_PATH=r"C:\Program Files\nodejs\npm.cmd"
+
+
