@@ -12,25 +12,25 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 from pathlib import Path
 
-# import environ
+import environ
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-# env = environ.Env()
-# env_file = str(BASE_DIR / "betterChanceSite" / ".env")
-# environ.Env.read_env(env_file)
+env = environ.Env()
+env_file = str(BASE_DIR / "betterChanceSite" / ".env")
+environ.Env.read_env(env_file)
 
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-j5u_hdks&42rrvj$a2-6h*bycuhe_u#cpr4+1ffdpjlljw_p5_'
-# SECRET_KEY = env('SECRET_KEY')
+#SECRET_KEY = 'django-insecure-j5u_hdks&42rrvj$a2-6h*bycuhe_u#cpr4+1ffdpjlljw_p5_'
+SECRET_KEY = env('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = env('DEBUG')
 
 ALLOWED_HOSTS = []
 
@@ -131,6 +131,6 @@ STATIC_ROOT = BASE_DIR / 'staticfiles/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 STATICFILES_DIRS = [
-    BASE_DIR / "betterChanceSite" / "static"
+    BASE_DIR / "betterChanceSite" / "static/"
 ]
-AUTH_USER_MODEL = "account.Signup"
+AUTH_USER_MODEL = "account.CustomUser"

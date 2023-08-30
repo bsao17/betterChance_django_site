@@ -1,11 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300&display=swap');
+
 body {
-    background: linear-gradient(90deg, #000058, #ffffff 20%);
+    background: linear-gradient(90deg, rgba(0, 0, 88, 1), rgba(0, 0, 144, 0.3) 20%);
+    color: black;
+    text-shadow: 1px 1px 2px white;
+    font-family: 'Times New Roman', sans-serif;
 }
 
 #nav {
     width:80%;
     border: solid 2px white;
-    color: white;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;

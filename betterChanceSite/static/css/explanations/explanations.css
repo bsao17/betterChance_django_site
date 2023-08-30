@@ -1,0 +1,16 @@
+#explanations {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: black;
+    margin: auto;
+}
+
+#link {
+    color: black;
+}
+
+#link:visited {
+    color: black;
+}
