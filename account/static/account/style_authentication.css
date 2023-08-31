@@ -8,9 +8,11 @@
     font-family: 'Nunito Sans', sans-serif;
 }
 
-.helptext {
-    display: none;
+.errorlist none{
+    color: black;
+    font-size: 1.2rem;
 }
+
 #signup_form {
     font-size: 0.8rem;
     color: white;
@@ -19,6 +21,15 @@
     border-radius: 5px;
     padding: 5px;
     background: linear-gradient(90deg, rgba(0, 0, 88, 1), rgba(0, 0, 144, 0.3) 20%)
+}
+
+#signin_form {
+    font-size: 0.8rem;
+    color: white;
+    border: outset 3px white;
+    border-radius: 5px;
+    padding: 5px;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1), rgba(0, 0, 144,1) 90%)
 }
 
 li {

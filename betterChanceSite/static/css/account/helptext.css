@@ -19,9 +19,41 @@ li {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: space-evenly;
-    font-size: 0.7rem;
+    font-size: 1rem;
     font-weight: bold;
-    color: red;
+    color: rgba(200, 200, 200, 1);
+}
+
+#id_email {
+    color: black;
+    font-weight: bold;
+}
+#id_age {
+    color: black;
+    font-weight: bold;
+}
+#id_first_name {
+    color: black;
+    font-weight: bold;
+}
+#id_last_name {
+    color: black;
+    font-weight: bold;
+}
+
+#id_username {
+    color: black;
+    font-weight: bold;
+}
+
+#id_password1 {
+    color: black;
+    font-weight: bold;
+}
+
+#id_password2 {
+    color: black;
+    font-weight: bold;
 }
 
 label {

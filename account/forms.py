@@ -15,9 +15,13 @@ class Signup_form(UserCreationForm):
             "username"
         ]
         widgets = {
-            "password": forms.PasswordInput(),
-            "password2": forms.PasswordInput()
+            "password": forms.PasswordInput()
         }
+
+    def clean(self):
+        password = self.cleaned_data.get("password")
+        password2 = self.cleaned_data.get("password2")
+        print(password, password2)
 
 
 class Signin_form(AuthenticationForm):
