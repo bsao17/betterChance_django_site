@@ -1,6 +1,4 @@
-{% load static %}
 {% load static tailwind_tags %}
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,8 +8,9 @@
     <link rel="stylesheet" href="{% static 'css/account/helptext.css' %}">
     <link rel="stylesheet" href="{% static 'css/account/authentication.css' %}">
     <title>{% block title %}{% endblock %}</title>
-     {% tailwind_css %}
+	{% tailwind_css %}
 </head>
+
 <header>{% block header %}{% endblock %}</header>
 <body class="body">
 <nav id="nav">

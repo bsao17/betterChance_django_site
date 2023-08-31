@@ -6,6 +6,10 @@
 {% block title %}Connexion utilisateur{% endblock %}
 
 {% block body %}
-    <h1>Connexion utilisateur</h1>
-
+    <h1 class="text-4xl p-5">Connexion utilisateur</h1>
+     <form method="POST" id="signup_form">
+            {% csrf_token %}
+            {{signin_form.as_ul}}
+        <button type="submit" id="button_form" class="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none ..." >Connexion</button>
+     </form>
 {% endblock %}

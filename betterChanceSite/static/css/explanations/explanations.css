@@ -1,0 +1,19 @@
+#explanations {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+
+    margin: auto;
+}
+
+.explain_list {
+    color: black;
+    font-size: 1.7rem;
+    padding: 15px;
+}
+
+.explain_list:visited {
+    color: black;
+    font-size: 1.7rem;
+}

@@ -6,12 +6,15 @@ from .forms import *
 
 # Create your views here.
 def signin(request):
-    return render(request, "account_views/signin.html")
+    form = Signin_form(request.POST)
+    if form.is_valid():
+        return redirect("orders")
+    return render(request, "account_views/signin.html", context={"signin_form": form})
 
 
 def signup(request):
     form = Signup_form(request.POST)
     if form.is_valid():
         form.save()
-        return redirect("orders")
-    return render(request, "account_views/signup.html", {"form": form})
+        return redirect("orders/")
+    return render(request, "account_views/signup.html", {"signup_form": form})
