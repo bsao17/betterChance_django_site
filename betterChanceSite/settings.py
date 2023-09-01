@@ -144,4 +144,7 @@ INTERNAL_IPS = [
 ]
 NPM_BIN_PATH=r"C:\Program Files\nodejs\npm.cmd"
 
+MEDIA_ROOT= BASE_DIR / "betterChanceSite" / "static" / "assets"
+MEDIA_URL = "betterChanceSite/assets/"
+
 
