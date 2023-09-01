@@ -768,12 +768,32 @@ select {
   position: static;
 }
 
+.m-auto {
+  margin: auto;
+}
+
 .block {
   display: block;
 }
 
+.flex {
+  display: flex;
+}
+
+.w-full {
+  width: 100%;
+}
+
 .transform {
   transform: var(--tw-transform);
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .bg-blue-500 {
@@ -783,6 +803,10 @@ select {
 
 .p-5 {
   padding: 1.25rem;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .text-xl {
