@@ -8,30 +8,24 @@ class Signup_form(UserCreationForm):
     class Meta:
         model = CustomUser
         fields = [
-            "last_name",
-            "first_name",
-            "age",
             "email",
-            "username"
+            "password"
         ]
         widgets = {
             "password": forms.PasswordInput()
         }
 
-    def clean(self):
-        password = self.cleaned_data.get("password")
-        password2 = self.cleaned_data.get("password2")
-        print(password, password2)
-
 
 class Signin_form(AuthenticationForm):
     class Meta:
         model: CustomUser
-        fields = ["username", "password"]
+        fields = ["username", "password1", "password2"]
         widgets = {
-            "password": forms.PasswordInput(),
+            "password1": forms.PasswordInput(),
+            "password2": forms.PasswordInput(),
         }
         labels = {
-            "username": "Nom d'Utilisateur",
-            "password": "Mot de passe",
+            "username": "Nom d'utilisateur",
+            "password1": "Mot de passe",
+            "password2": "répéter mot de passe"
         }

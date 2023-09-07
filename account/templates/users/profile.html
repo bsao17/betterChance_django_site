@@ -1,11 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>profile</title>
-</head>
-<body>
-    <h1>Votre Profile utilisateur</h1>
-    <p>Nom d'utilisateur: {{user.username}}</p>
-</body>
-</html>
+{% extends '../base.html' %}
+
+
+{% block body %}
+<div class="flex flex-col justify-center align-center">
+    <img src="{{ avatar }}" alt="avatar">
+    <h1 class="text-center">Votre Profile utilisateur</h1>
+    <p class="w-full text-center">Nom d'utilisateur: {{user.username}}</p>
+</div>
+{% endblock %}
