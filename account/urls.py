@@ -5,8 +5,9 @@ from .views import *
 from . import views
 from .forms import Signup_form
 
+app_name = 'account'
 urlpatterns = [
-    path('login/', Signin_View.as_view()),
-    path('signup/', Signup_View.as_view()),
-    path('profile/', views.User_Profile, name="users_profile"),
+    path('login/', views.login_user, name="login"),
+    path('signup/', Signup_View.as_view(), name='signup'),
+    path('profile/', views.User_Profile, name="profile"),
 ]

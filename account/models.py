@@ -1,21 +1,16 @@
+from django.contrib.auth.models import AbstractUser
 from django.db import models
-from django.contrib.auth.models import AbstractUser, User
 
 
-# Create your models here.
 class CustomUser(AbstractUser):
-    age = models.CharField(max_length=3, blank=True)
+    age = models.CharField(max_length=3, blank=True, null=True)
 
     class Meta:
-        verbose_name = "Utilisateur"
-
-    def __str__(AbstractUser):
-        return AbstractUser.last_name + " " + AbstractUser.first_name
+        verbose_name = "email"
 
 
 class Profile(models.Model):
     user = models.OneToOneField(CustomUser, on_delete=models.CASCADE)
-
     avatar = models.ImageField(blank=True, default='default.jpg', upload_to='profile_images')
     bio = models.TextField()
 

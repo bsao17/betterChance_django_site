@@ -7,7 +7,7 @@ body {
 }
 
 #nav {
-    width:80%;
+    width:100%;
     border: solid 2px white;
     display: flex;
     flex-direction: row;
@@ -17,7 +17,6 @@ body {
     padding: 10px;
     margin: auto;
     background: linear-gradient(30deg, #ffffff, #000058 );
-    border-radius: 10px;
     text-decoration: none;
     text-shadow: 1px 1px 2px black;
 }
