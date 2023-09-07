@@ -6,8 +6,8 @@
 <div id="form">
     <h1 class="text-4xl p-5">Inscription utilisateur</h1>
     <form method="POST" id="signup_form">
-            {% csrf_token %}
-            {{signup_form.as_ul}}
+        {% csrf_token %}
+        {{form.as_ul}}
         <button type="submit" id="button_form" >S'inscrire</button>
     </form>
 </div>
