@@ -1,8 +1,16 @@
 
 
 
-#signup_form {
-    border: outset 3px rgba(0, 0, 144, 0.1);
+#signup-form {
+    border: groove 3px white;
+    width: 30%;
+    padding: 5px;
+    background: linear-gradient(90deg, rgba(0, 0, 144, 0.2) 80%, rgba(0, 0, 88, 1))
+}
+
+#signin-form {
+    border: groove 3px white;
+    width: 30%;
     padding: 5px;
     background: linear-gradient(90deg, rgba(0, 0, 144, 0.2) 80%, rgba(0, 0, 88, 1))
 }
