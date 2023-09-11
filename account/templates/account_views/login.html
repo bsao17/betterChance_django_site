@@ -13,5 +13,8 @@
         {{form.as_ul}}
         <button type="submit" id="button_form" class="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none ..." >Connexion</button>
      </form>
+    {% for message in messages %}
+        {{message}}
+    {% endfor %}
 </div>
 {% endblock %}

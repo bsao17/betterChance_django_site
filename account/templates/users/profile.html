@@ -2,9 +2,10 @@
 
 
 {% block body %}
-<div class="flex flex-col justify-center align-center">
-    <img src="{{ avatar }}" alt="avatar">
+{% csrf_token %}
     <h1 class="text-center">Votre Profile utilisateur</h1>
-    <p class="w-full text-center">Nom d'utilisateur: {{user.username}}</p>
-</div>
+    <div class="flex flex-row justify-between items-center">
+        <img class="block w-1/2 m-50" src="{{ avatar }}" alt="avatar">
+        <p class="w-full text-center">Nom d'utilisateur: {{user.username}}</p>
+    </div>
 {% endblock %}

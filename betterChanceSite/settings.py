@@ -113,7 +113,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
 
-LANGUAGE_CODE = 'FR-fr'
+LANGUAGE_CODE = 'fr-fr'
 
 TIME_ZONE = 'UTC'
 
@@ -145,6 +145,6 @@ INTERNAL_IPS = [
 NPM_BIN_PATH=r"C:\Program Files\nodejs\npm.cmd"
 
 MEDIA_ROOT= BASE_DIR / "betterChanceSite" / "static" / "assets"
-MEDIA_URL = "betterChanceSite/assets/"
+MEDIA_URL = "betterChanceSite/static/assets/"
 
 

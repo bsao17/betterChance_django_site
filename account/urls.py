@@ -1,9 +1,5 @@
-from django.conf import settings
-from django.conf.urls.static import static
 from django.urls import path, include
-from .views import *
 from . import views
-from .forms import Signup_form
 
 app_name = 'account'
 urlpatterns = [
