@@ -765,6 +765,10 @@ select {
   position: static;
 }
 
+.m-auto {
+  margin: auto;
+}
+
 .block {
   display: block;
 }
@@ -777,16 +781,36 @@ select {
   width: 100%;
 }
 
+.w-1\/2 {
+  width: 50%;
+}
+
 .transform {
   transform: var(--tw-transform);
+}
+
+.flex-row {
+  flex-direction: row;
 }
 
 .flex-col {
   flex-direction: column;
 }
 
+.items-center {
+  align-items: center;
+}
+
 .justify-center {
   justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
 }
 
 .p-5 {
