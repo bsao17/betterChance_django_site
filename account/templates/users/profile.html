@@ -1,6 +1,11 @@
 {% extends '../base.html' %}
+{% load static %}
 
+{% block head %}
+<link rel="stylesheet" href="{% static 'users/css/style.css'%}">
+{% endblocl%}
 
+{% block title %}profile{% endblocl%}
 {% block body %}
 {% csrf_token %}
     <h1 class="text-center">Votre Profile utilisateur</h1>

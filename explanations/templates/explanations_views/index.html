@@ -1,6 +1,13 @@
 {% extends "../base.html"%}
+{% load static %}
+
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'explanations/css/style.css' %}">
+{% endblock %}
 
 {% block title %}Explication algorithme{% endblock %}
+
 {% block body %}
     <h1 class="text-4xl p-5">Explications de l'Algorithmes Better Chance</h1>
     {% for detail in details %}

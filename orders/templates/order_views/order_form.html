@@ -2,8 +2,10 @@
 {% load static %}
 
 
+{% block head %}
+<link rel="stylesheet" href="{% include 'orders/css/order_form.css' %}">
+{% endblocl %}
 
-{% include 'orders/css/order_form.css' %}
 
 {% block title %}commande formulaire{% endblock %}
 {% block body %}
