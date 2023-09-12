@@ -1,7 +1,12 @@
 {% extends "../base.html" %}
 {% load static %}
 
-{% static 'css/account/style.css' %}
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'account/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'account/css/helptext.css' %}">
+{% endblock %}
+
 
 {% block title %}Connexion utilisateur{% endblock %}
 
